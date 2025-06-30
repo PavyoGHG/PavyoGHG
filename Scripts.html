@@ -24,22 +24,22 @@
   <body>
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="index.html" id="navbar__logo" data-aos="fade-down"></i>FrozenGHG</a>
+        <a href="index.html" id="navbar__logo" data-aos="fade-down"></i>FrxzenGHG</a>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
           <span class="bar"></span>
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="/" class="navbar__links" data-aos="fade-down">Home</a>
+            <a href="/" class="navbar__links" data-aos="fade-down" data-aos-delay="100">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="/tech.html" class="navbar__links" data-aos="fade-down">Tech</a>
+            <a href="/tech.html" class="navbar__links" data-aos="fade-down" data-aos-delay="200">Tech</a>
           </li>
           <li class="navbar__item">
-            <a href="/" class="navbar__links" data-aos="fade-down">Products</a>
+            <a href="/" class="navbar__links" data-aos="fade-down" data-aos-delay="300">Products</a>
           </li>
-          <li class="navbar__btn"><a href="index.html" class="button" data-aos="fade-down">Go back</a></li>
+          <li class="navbar__btn"><a href="Scripts.html" class="button" data-aos="fade-down" data-aos-delay="400">Challange Mods etc.</a></li>
         </ul>
       </div>   
     </nav>
@@ -47,13 +47,14 @@
 
     <div class="main">
       <div class="main__container">
-        <div class="main__content" data-aos="fade-right">
-          <h1>YOUTUBER</h1>
-          <h2>DEVELOPER</h2>
-          <p>Go Back <dir></dir>↓</p>
-          <button class="main__btn"><a href="index.html">Go Back</a></button>
+        <div class="main__content">
+          <h1 data-aos="fade-right" data-aos-delay="100">YOUTUBER</h1>
+          <h2 data-aos="fade-right" data-aos-delay="200">DEVELOPER</h2>
+          <p data-aos="fade-right" data-aos-delay="300">Challange Mods etc.</p>
+          <p data-aos="fade-right" data-aos-delay="400">‎ ‎ ‎ ‎ ‎ ↓</p> 
+          <button class="main__btn" data-aos="fade-right" data-aos-delay="500"><a href="Scripts.html">Challanges etc.</a></button>
         </div>
-        <div class="main__img--container" data-aos="fade-left">
+        <div class="main__img--container" data-aos="fade-left" data-aos-delay="650">
           <img id="main__img" src="images/socials.png" />
         </div>
       </div>
@@ -63,29 +64,36 @@
 <div class="services">
   <h1 data-aos="zoom-in-up">Neueste Inhalte</h1>
   <div class="services__container">
+
     <!-- YouTube Video Card -->
-    <div class="services__card">
-      <h2>Neuestes Video</h2>
+    <div class="services__card" data-aos="fade-up">
+      <h2>🎥 Neuestes Video</h2>
       <div class="video-container">
-        <iframe width="100%" height="215" src="images/basti.png" title="YouTube video player"
-          frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+        <iframe
+          width="100%"
+          height="215"
+          src="https://www.youtube.com/embed/Uel3PhBX3FI"
+          title="Neuestes YouTube Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
       <p>Direkt vom Kanal</p>
-      <button onclick="window.open('https://www.youtube.com/@FrxzenGHG', '_blank')">Mehr auf YouTube</button>
+      <button onclick="window.open('https://www.youtube.com/@FrxzenGHG', '_blank')">
+        Mehr auf YouTube
+      </button>
     </div>
 
     <!-- Modpack Info Card -->
-    <div class="services__card">
-      <h2>Neueste ChallangeMod</h2>
-      <img src="images/modpack-thumbnail.png" alt="Modpack Bild" class="services__card-img" />
-      <p>Jetzt testen: PvP & Technik vereint!</p>
+    <div class="services__card" data-aos="fade-up" data-aos-delay="100">
+      <h2>🧪 Neueste Challange-Mod</h2>
+      <img src="images/basti.png" alt="Modpack Bild" class="services__card-img" />
+      <p>Teste jetzt: PvP & Technik vereint!</p>
       <button onclick="window.open('https://www.curseforge.com/minecraft/modpacks/DEIN_MODPACK_LINK', '_blank')">
-        Zum Modpack
+        Zum den Mods
       </button>
     </div>
-  </div>
-</div>
 
 
     <!-- Footer Section -->
@@ -120,9 +128,9 @@
       <section class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
-            <a href="/" id="footer__logo"><i class="fas fa-gem"></i>NEXT</a>
+            <a href="/" id="footer__logo"><i class="fas fa-gem"></i>FrxzenGHG</a>
           </div>
-          <p class="website__rights">© NEXT 2020. All rights reserved</p>
+          <p class="website__rights">This Website was created by FrxzenGHG</p>
           <div class="social__icons">
             <a
               class="social__icon--link"
@@ -168,10 +176,10 @@
         </div>
       </section>
     </div>
+    <div class="icey-background"></div>
     <script src="app.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/lokesh-coder/pretty-snowflakes@latest/dist/snowflakes.min.js"></script>
-
+      <div id="cursor-glow"></div>
   <script>
     AOS.init();
   </script>
